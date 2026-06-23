@@ -1,0 +1,20 @@
+{
+  "name": "apg-esm-examples",
+  "version": "1.0.0",
+  "description": "Examples of use of apg-esm.",
+  "license": "MIT",
+  "author": "Lowell D. Thomas",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generator": "node node_modules/apg-esm/dist/apg/generator.js",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "apg-esm": "file:../apg-esm"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "typescript": "^6.0.3"
+  }
+}

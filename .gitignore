@@ -1,0 +1,15 @@
+.*
+!.gitignore
+!.eslintrc.json
+!.prettierrc
+!.github
+*~
+*.log
+*.out
+*.zip
+*.tgz
+**node_modules/
+**/dist/
+**/coverage/
+**output/
+**documentation/
