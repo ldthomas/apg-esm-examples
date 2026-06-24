@@ -5,10 +5,13 @@
     "ignoreDeprecations": "6.0",
     "moduleResolution": "node",
     "outDir": "dist",
+    "rootDir": ".",
     "declaration": true,
     "emitDeclarationOnly": false,
     "allowJs": true,
     "checkJs": false,
-    "strict": false
-  }
+    "strict": true
+  },
+  "include": ["TypeScript"],
+  "exclude": ["JavaScript", "dist", "node_modules"]
 }

@@ -2,10 +2,6 @@
  *   copyright: Copyright (c) 2026 Lowell D. Thomas
  *     license: MIT (https://opensource.org/license/mit)
  *   ********************************************************************************* */
-// import Api from '../src/apg-api/api.js';
-// import Parser from '../src/apg-lib/parser.js';
-// import Ast from '../src/apg-lib/ast.js';
-// import ids from '../src/apg-lib/identifiers.js';
 import { Api, Parser, Ast, ids } from "apg-esm";
 
 const description = `

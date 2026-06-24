@@ -2,18 +2,15 @@
  *   copyright: Copyright (c) 2026 Lowell D. Thomas
  *     license: MIT (https://opensource.org/license/mit)
  *   ********************************************************************************* */
-// import Api from "../src/apg-api/api.js";
-// import Parser from "../src/apg-lib/parser.js";
-import { Api, Parser } from "apg-esm";
+import { Api, Parser, Trace } from "apg-esm";
 
 const description = `
-It is well known that the strings a^nb^nc^n, n > 0, cannot be represented with a context-free grammar.
-However, with the look ahead operators AND(&) and NOT(!) it is, in fact possible to match such strings.
-(See the Wikipedia article on Syntactic Predicates, https://en.wikipedia.org/wiki/Syntactic_predicate).
-The grammar used here is an SABNF translation of the a^nb^nc^n grammar given there.
+Demonstrate how to generate a trace of the parser through the parse tree.
+Note that the parse tree spacing is normally of the form "....|....|",
+but when in look ahead mode the form is, "****~****~".
 `;
 
-const THIS_FILENAME = "examples/lookAhead.js";
+const THIS_FILENAME = "examples/trace.js";
 /* the SABNF grammar */
 let anbncn = "";
 anbncn += "S = &(AB !b) *a BC !c\n";
@@ -32,9 +29,14 @@ if (api.errors.length) {
 }
 
 /* make a parser from the grammar object */
-console.log(description);
 const grammar = api.toObject();
 const parser = new Parser(grammar);
+const trace = new Trace();
+parser.setTrace(trace);
 const result = parser.parse(0, "aaaaabbbbbccccc");
+console.log(description);
 console.log("LOOK AHEAD PARSER RESULT");
 console.dir(result);
+console.log("LOOK AHEAD PARSER TRACE");
+console.log();
+console.log(trace.display());

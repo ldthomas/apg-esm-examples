@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+node dist/TypeScript/basic/fixed.js
+node dist/TypeScript/basic/separate.js
+node dist/TypeScript/basic/single.js
+node dist/TypeScript/ast.js
+node dist/TypeScript/lookAhead.js
+node dist/TypeScript/stats.js
+node dist/TypeScript/trace.js
+node dist/TypeScript/traceSabnf.js
+node dist/TypeScript/udt.js

@@ -2,10 +2,7 @@
  *   copyright: Copyright (c) 2026 Lowell D. Thomas
  *     license: MIT (https://opensource.org/license/mit)
  *   ********************************************************************************* */
-// import Api from '../src/apg-api/api.js';
-// import Parser from '../src/apg-lib/parser.js';
-// import ids from '../src/apg-lib/identifiers.js';
-import { Api, Parser, ids } from "apg-esm";
+import { Api, Parser, ids, type ParserCallback } from "apg-esm";
 
 const description = `
 Demonstration of using User-Defined Terminals (UDTs) for handwritten
@@ -28,7 +25,7 @@ float += 'esign    = "+" / "-"\n';
 float += "exp      = u_exp\n";
 
 /* non-empty-string UDT */
-const u_callback = (sys, chars, phraseIndex, data) => {
+const u_callback: ParserCallback = (sys, chars, phraseIndex, data) => {
   let len = 0;
   /* NOTE: be careful to never over run the end of the character string */
   for (let i = phraseIndex; i < chars.length; i++) {
@@ -46,7 +43,7 @@ const u_callback = (sys, chars, phraseIndex, data) => {
 };
 
 /* empty-string UDT */
-const e_callback = (sys, chars, phraseIndex, data) => {
+const e_callback: ParserCallback = (sys, chars, phraseIndex, data) => {
   let c = chars[phraseIndex];
   if (c === 43 || c === 45) {
     /* if "+" or "-" it matches a string */
