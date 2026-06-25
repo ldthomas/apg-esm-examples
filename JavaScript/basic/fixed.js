@@ -19,3 +19,5 @@ const result = parser.parse(0, "-123.0e-10");
 console.log(description);
 console.log("FIXED PARSER RESULT");
 console.dir(result);
+console.log("\nORIGINAL GRAMMAR");
+console.log(grammar.toString());
