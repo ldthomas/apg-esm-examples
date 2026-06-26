@@ -104,7 +104,7 @@ export default class grammar {
     this.rules[8].opcodes[0] = { type: 3, min: 1, max: Infinity, gl: 12, go: 11 };// REP
     this.rules[8].opcodes[1] = { type: 5, min: 48, max: 57, gl: 12, go: 13 };// TRG
   }
-    // The `toString()` member will display the original grammar file(s) that produced these opcodes.
+  // The `toString()` member will display the original grammar file(s) that produced these opcodes.
   toString() {
     let str = "";
       str += ";\r\n";
