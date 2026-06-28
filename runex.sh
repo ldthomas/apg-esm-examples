@@ -1,4 +1,8 @@
 #!/usr/bin/env node
+# run all JavaScript tests
+# typically:
+#   bash runex.sh >/tmp/runex
+#   less /tmp/runex
 node JavaScript/basic/fixed.js
 node JavaScript/basic/separate.js
 node JavaScript/basic/single.js
@@ -8,6 +12,8 @@ node JavaScript/stats.js
 node JavaScript/trace.js
 node JavaScript/traceSabnf.js
 node JavaScript/udt.js
+#
+# run all TypeScript tests
 node dist/TypeScript/basic/fixed.js
 node dist/TypeScript/basic/separate.js
 node dist/TypeScript/basic/single.js

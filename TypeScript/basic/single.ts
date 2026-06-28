@@ -6,10 +6,10 @@ import { Api, Parser, utils, ids, type ParserCallback } from "apg-esm";
 const charsToString = utils.charsToString;
 
 const description = `
-Simple demonstration of how to generate a grammar object dynamically in a single
+Simple demonstration of how to generate an in-memory grammar object in a single
 step, create a parser with it and parse a string with the resulting parser. 
 
-This example demonstrates the use of parser callback functions.
+This example also demonstrates the use of parser callback functions.
 `;
 
 const THIS_FILENAME = "examples/basic/single.js";

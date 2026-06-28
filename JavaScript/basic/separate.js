@@ -5,7 +5,7 @@
 import { Api, Parser } from "apg-esm";
 
 const description = `
-Simple demonstration of how to generate a grammar object dynamically in separate steps,
+Simple demonstration of how to generate an in-memory grammar object in separate steps,
 create a parser with it and parse a string with the resulting parser. 
 `;
 

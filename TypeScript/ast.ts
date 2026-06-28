@@ -20,7 +20,7 @@ from AST callback functions is a safer option.
 
 This grammar is artifically designed to have rule name success on a failing branch,
 but this situation is quite common in real life grammars. 
-(For example, ./src/apg-api/sabnf-grammar.txt, the grammar for the parser generator.)
+(For example, sabnf-grammar.txt in apg-esm, the grammar for the parser generator.)
 `;
 
 const THIS_FILENAME = "examples/ast.js";
@@ -102,6 +102,3 @@ console.log("\nTRANSLATE WITH THE AST");
 console.log("Note that rule A is matched only once, as required.\n");
 const data = {};
 ast.translate(data);
-
-// console.log('PARSER RESULT');
-// console.dir(result);

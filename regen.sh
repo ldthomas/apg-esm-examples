@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+# regenerate all Grammar objects for all test SABNF files
 node node_modules/apg-esm/dist/apg/generator.js -i JavaScript/basic/float.txt -o JavaScript/basic/float
 node node_modules/apg-esm/dist/apg/generator.js -i JavaScript/float-udt.txt -o JavaScript/float-udt
 node node_modules/apg-esm/dist/apg/generator.js -i JavaScript/lookAhead.txt -o JavaScript/lookAheadGrammar

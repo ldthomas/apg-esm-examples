@@ -6,15 +6,15 @@
   "author": "Lowell D. Thomas",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"See regen.sh and runex.sh and the discussion of them in README.md\" && exit 1",
     "generator": "node node_modules/apg-esm/dist/apg/generator.js",
     "build": "tsc"
-  },
-  "dependencies": {
-    "apg-esm": "file:../apg-esm"
   },
   "devDependencies": {
     "@types/node": "^26.0.0",
     "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "apg-esm": "file:../apg-esm/apg-esm-1.1.0.tgz"
   }
 }

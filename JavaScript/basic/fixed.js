@@ -7,7 +7,7 @@ import { Parser } from "apg-esm";
 
 const description = `
 Simple demonstration of how to parse a string with a previously generated grammar object.
-The grammar constructor, Grammar, was generated from the ABNF grammar, float.txt with:
+The grammar class, Grammar, was generated from the ABNF grammar float.txt with:
 
 npm run generator -- -i ./JavaScript/basic/float.txt -o ./JavaScript/basic/float
 `;
