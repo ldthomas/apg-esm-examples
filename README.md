@@ -29,18 +29,18 @@ in the `TypeScript` directory.
 - udt.js | udt.ts: demonstrates using UDT handwritten code snippets for recognizing
   phrases that can be empty and phrases that cannot be empty
 
-  ### Testing
+### Testing
 
-  In lieu of unit testing, two scripts are provided to run and check the test results.
-  `regen.sh` will regenerate a new Grammar class for each of the SABNF texts in the repository.
-  `runex.sh` will run all of the examples.
-  Inspection of the output of `runex.sh` should then not show any errors.
-  The testing workflow would then be something like:
+In lieu of unit testing, two scripts are provided to run and check the test results.
+`regen.sh` will regenerate a new Grammar class for each of the SABNF texts in the repository.
+`runex.sh` will run all of the examples.
+Inspection of the output of `runex.sh` should then not show any errors.
+The testing workflow would then be something like:
 
-  ```
-  bash regen.sh
-  npm run build
-  rm /tmp/runex
-  bash runex.sh > /tmp/runex
-  less /tmp/runex
-  ```
+```
+bash regen.sh
+npm run build
+rm /tmp/runex
+bash runex.sh > /tmp/runex
+less /tmp/runex
+```
