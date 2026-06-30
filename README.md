@@ -3,7 +3,7 @@
 [`apg-esm`](https://github.com/ldthomas/apg-esm) is APG an ABNF Parser Generator.
 It has been written in strictly typed TypeScript.
 `apg-esm-examples` is a suite of examples demonstrating the use of `apg-esm`
-for both the JavaScript and the TypeScipt developer.
+for both the JavaScript and the TypeScript developer.
 
 ### The Examples
 
@@ -19,7 +19,7 @@ in the `TypeScript` directory.
   - separate.js | separate.ts: generating an in-memory Grammar object from an `Api` object
     using the Api's separate steps
 - ast.js | ast.ts: demonstration of when parser translation fails and AST translation is needed;
-  demonstrates writing and using both Paser and Ast callback functions
+  demonstrates writing and using both Parser and Ast callback functions
 - lookAhead.js | lookAhead.ts: demonstration of using the look ahead operators & and !
 - stats.js | stats.ts: demonstrates the collection and display of node hit statistics
 - trace.js | trace.ts: tracing the parser through the parse tree during parsing is essential for debugging problems;
