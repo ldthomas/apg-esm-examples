@@ -7,6 +7,7 @@ node JavaScript/basic/fixed.js
 node JavaScript/basic/separate.js
 node JavaScript/basic/single.js
 node JavaScript/ast.js
+node JavaScript/ast-xml.js
 node JavaScript/lookAhead.js
 node JavaScript/stats.js
 node JavaScript/trace.js
@@ -18,6 +19,7 @@ node dist/TypeScript/basic/fixed.js
 node dist/TypeScript/basic/separate.js
 node dist/TypeScript/basic/single.js
 node dist/TypeScript/ast.js
+node dist/TypeScript/ast-xml.js
 node dist/TypeScript/lookAhead.js
 node dist/TypeScript/stats.js
 node dist/TypeScript/trace.js

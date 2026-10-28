@@ -1,6 +1,6 @@
 {
   "name": "apg-esm-examples",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Examples of use of apg-esm.",
   "license": "MIT",
   "author": "Lowell D. Thomas",
@@ -11,10 +11,10 @@
     "build": "tsc"
   },
   "devDependencies": {
-    "@types/node": "^26.0.0",
+    "@types/node": "^26.6.5",
     "typescript": "^6.0.3"
   },
   "dependencies": {
-    "apg-esm": "^1.1.0"
+    "apg-esm": "^1.1.4"
   }
 }
